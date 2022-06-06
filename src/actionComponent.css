@@ -1,0 +1,139 @@
+.section-cta{
+    margin: 0 80px;
+    padding: 96px 32px;
+    
+}
+.cta-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+ background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+ box-shadow: 0 24px 48px rgba(0,0,0,0.15);
+ /* height:500px; */
+ border-radius: 11px;
+ overflow:hidden;
+ color:#45260a;
+
+}
+.heading-secondary-cta{
+    letter-spacing: -0.5px;
+    color:#45260a;
+    font-size:44px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+   
+    }
+
+.cta-text-box{
+    color:#45260a;
+    padding:48px 64px 64px 64px;
+}
+.cta-img-box{
+background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35),
+rgba(230, 135, 34, 0.35)), url("../src/img/eating.jpg");
+background-size: cover;
+background-position: center;
+}
+.cta-text{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 48px;
+}
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 24px;
+}
+.cta-form label{
+display: block;
+font-size: 16px;
+font-weight: 500;
+margin-bottom: 12px;
+}
+.cta-form input,
+.cta-form select{
+    width:100%;
+    padding:12px;
+    font-size: 18px;
+    font-family: inherit;
+    border:none;
+    color:inherit;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.cta-form input::placeholder{
+    color:#aaa;
+}
+.sign-up-btn{
+    display: inline-block;
+    font-size:20px;
+    font-weight: 600;
+    padding:12px 0px;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    background-color: #45260a;
+    color:#fdf2e9;
+    align-self: end;
+    transition: all 0.3s;
+}
+.sign-up-btn:hover{
+    background-color:#fff ;
+    color:#555;
+}
+
+*:focus{
+    outline: none;
+}
+@media(max-width:85.375em){
+    .heading-secondary-cta{
+        font-size:36px !important;
+       
+        }
+}
+@media(max-width:75.625em){
+    .section-cta {
+        margin: 0 64px;
+        padding: 96px 24px;
+    }
+}
+@media(max-width:64em){
+    .cta-container {
+        grid-template-columns: 60% 40%;
+    }
+    .cta-form{
+        grid-template-columns: 1fr ;
+      
+    }
+    .cta-text-box {
+        padding: 48px 24px 24px 24px;
+    }
+    .heading-secondary-cta {
+        font-size: 32px !important;
+        margin-bottom: 24px;
+    }
+    .cta-text {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 24px;
+    }
+    .section-cta {
+        padding: 96px 0px;
+    }
+}
+
+@media(max-width:34.37em){
+    .cta-container {
+        grid-template-columns: 1fr;
+    }
+    .cta-img-box{
+        height:360px;
+        grid-row: 1;
+    }
+}
+@media(max-width:28.12em){
+    .section-cta {
+        margin: 0 18px;
+    }
+}

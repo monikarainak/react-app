@@ -1,0 +1,212 @@
+section.section-meals {
+    margin: 0 80px;
+    padding: 96px 32px;
+}
+.meal-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 64px;
+    row-gap:96px;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.heading-secondary-meal{
+    letter-spacing: -0.5px;
+    color:#333;
+    font-size:44px;
+    line-height: 1.2;
+    margin-bottom: 96px;
+    }
+    .subheading-meal{
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        color: #cf711f;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        letter-spacing: 0.75px;
+        }
+        .meal-img{
+            width:100%;
+        }
+        .meal-title{
+            font-size: 24px;
+            color:#333;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+        .meal-attributes{
+            list-style: none;
+            display: flex;
+            flex-direction:column ;
+            gap:20px;
+        }
+        .meal-attribute{
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap:16px;
+        }
+        .meal-icon{
+            height:24px;
+            width:24px;
+            color:#e67e22;
+        }
+        strong{
+            font-weight: 500;
+        }
+        .tag{
+            display: inline;
+            padding:4px 8px;
+            font-size: 12px;
+            text-transform: uppercase;
+            background-color: #51cf66;
+            color:#333;
+            border-radius: 100px;
+            font-weight: 600;
+
+        }
+        .tag--vegan{
+background-color:#94d82d ;
+        }
+        .tag--paleo{
+background-color:#ffd43d;
+        }
+        .meal-tags{
+            margin-bottom: 12px;
+            display: flex;
+            gap:4px;
+        }
+        .meals{
+            box-shadow: 0 24px 48px rgba(0,0,0,0.075);
+            border-radius: 11px;
+            overflow: hidden;
+            transition: all 0.4s;
+        }
+        .meal-content{
+            padding:32px 48px 48px 48px;
+        }
+        .list{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap:16px;
+        }
+        .list-item{
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .heading-tertiary{
+            letter-spacing: -0.5px;
+            color:#333;
+            font-size: 32px;
+            margin-bottom: 96px;
+            line-height: 1.2;
+            margin-bottom: 32px;
+            }
+            .all-recipes{
+                font-size: 18px;
+                text-align: center;
+            }
+            .meal-container-1{
+                text-align: center;
+            }
+
+            .meals:hover{
+                transform: translateY(-12px);
+                box-shadow: 0 32px 64px rgba(0,0,0,0.06);
+            }
+            .Link:link,
+            .Link:visited{
+                display: inline-block;
+                color:#e67e22;
+                text-decoration: none;
+                border-bottom: 1px solid currentColor;
+                padding-bottom: 2px;
+                transition: all 0.3s;
+            }
+            .Link:hover
+            , .Link:active{
+          color:#cf711f;
+          border-bottom: 1px solid transparent;
+            }
+
+            @media(max-width:75.625em){
+                .heading-secondary-meal{
+                    font-size: 36px;
+                } 
+                .heading-tertiary{
+                    font-size: 24px;
+                }
+                section.section-meals {
+                    margin: 0 64px;
+                    padding: 96px 24px;
+                }
+            }
+            @media(max-width:85.375em){
+                .meal-grid-container{
+                    column-gap: 48px;
+                    row-gap:64px;
+                   
+                }
+                .meal-content{
+                    padding:32px 36px 48px 36px;
+                }
+                .meal-title{
+                    font-size: 22px;
+                }
+                .list {
+                    gap: 12px;
+                }
+            }
+
+            @media(max-width:64em){
+                .meal-content {
+                    padding: 24px 24px 24px 24px;
+                }
+                .meal-grid-container {
+                    column-gap: 24px;
+                }
+                section.section-meals {
+                    padding: 96px 0px;
+                }
+                .meal-title {
+                    font-size: 18px;
+                }
+                .meal-attribute {
+                    font-size: 16px;
+                }
+                .list {
+                    gap: 8px;
+                }
+                .heading-tertiary {
+                    font-size: 20px;
+                }
+                .heading-secondary-meal {
+                    font-size: 32px;
+                }
+                .heading-secondary {
+                    font-size: 32px;
+                }
+            }
+
+            @media(max-width:47.5em){
+                .meal-grid-container{
+                    grid-template-columns: 1fr 1fr;
+                }
+                .diets{
+                    grid-column: 1/-1;
+                    justify-self: center;
+                }
+                .heading-secondary-meal {
+                margin-bottom: 48px;
+                }
+            }
+            @media(max-width:28.12em){
+                .meal-grid-container {
+                    grid-template-columns: 1fr;
+                }  
+            }
